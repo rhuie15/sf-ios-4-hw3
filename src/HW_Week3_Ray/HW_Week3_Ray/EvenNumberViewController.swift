@@ -13,7 +13,6 @@ class EvenNumberViewController: UIViewController {
     
         
     @IBOutlet weak var evenNumberLabel: UILabel!
-    
 
     @IBOutlet weak var inputNumber: UITextField!
     
@@ -35,11 +34,15 @@ class EvenNumberViewController: UIViewController {
                 }
             
             } else {
-            self.evenNumberLabel.text = "You did not enter an integer"
+            
+                self.evenNumberLabel.text = "You did not enter an integer"
                 
             }
+        
         } else {
+            
                 self.evenNumberLabel.text = "You did not enter a value"
+            
             }
             
          inputNumber.text = nil

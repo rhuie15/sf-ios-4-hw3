@@ -50,14 +50,14 @@
                                 <rect key="frame" x="96" y="368" width="120" height="30"/>
                                 <state key="normal" title="Add Numbers"/>
                                 <connections>
-                                    <segue destination="vCz-r1-S0s" kind="showDetail" id="ROX-oR-AGM"/>
+                                    <segue destination="vCz-r1-S0s" kind="show" id="jlU-oo-G56"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9Y-lq-BEO">
                                 <rect key="frame" x="93" y="419" width="125" height="30"/>
                                 <state key="normal" title="Even Number?"/>
                                 <connections>
-                                    <segue destination="rbU-8y-vnw" kind="showDetail" id="U7v-Xc-Oqw"/>
+                                    <segue destination="rbU-8y-vnw" kind="show" id="AwA-CI-cLX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,7 +112,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="evenNumberLabel" destination="fgF-a7-kjc" id="qL0-nj-2Qm"/>
-                        <outlet property="inputNumber" destination="xur-Pz-Gj9" id="Fza-dR-GeB"/>
+                        <outlet property="inputNumber" destination="xur-Pz-Gj9" id="bZs-Na-0a6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFd-UY-htr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -178,7 +178,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz2-hR-Vdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="131"/>
+            <point key="canvasLocation" x="244" y="131"/>
         </scene>
     </scenes>
 </document>
