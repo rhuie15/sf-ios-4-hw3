@@ -31,9 +31,11 @@ class ViewController: UIViewController {
         let name = inputName.text
         let age = inputAge.text
     
-        if name != "" && age != "" {  // why doesn't "nil" work instead of ""
-    
-        self.inputLabel.text = "Hello \(name!), you are \(age!) years old!"
+        if name != "" && age != "" {
+        
+            if let numAge = Int(age!) {
+      
+            self.inputLabel.text = "Hello \(name!), you are \(age!) years old!"
             
    /* TODO #3
         let numAge = Int(age!)
@@ -50,7 +52,8 @@ class ViewController: UIViewController {
             
             
    // TODO #4   -- I'm confused by this problem since it's the same logic in #3
-        let numAge = Int(age!)
+        //let numAge = Int(age!)
+        
             if numAge >= 21 {
                 self.drinkLabel.text = "You can drive, vote, and drink (but not at the same time!)"
             } else if numAge >= 18 {
@@ -61,13 +64,17 @@ class ViewController: UIViewController {
                 self.drinkLabel.text = "You're too young to do anything"
             }
             
+            } else {
+            
+        self.inputLabel.text = "You must enter a name and valid age"
+        self.drinkLabel.text = nil
+            }
+            
         } else {
-            
-        self.inputLabel.text = "You must enter a name and age"
-            
+            self.inputLabel.text = "You must enter both a name and age"
+            self.drinkLabel.text = nil
         }
     }
-  
     
     
     

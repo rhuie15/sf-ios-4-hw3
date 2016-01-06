@@ -43,8 +43,8 @@ class EvenNumberViewController: UIViewController {
             
                 self.evenNumberLabel.text = "You did not enter a value"
             
-            }
-            
+        }
+        
          inputNumber.text = nil
         
     }
